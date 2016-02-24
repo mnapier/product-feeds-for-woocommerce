@@ -292,7 +292,6 @@ class PBasicFeed {
 		global $message;
 		global $pfcore;
 
-		$x = new PLicense();
 		$this->loadAttributeUserMap();
 
 		if ($this->updateObject == null)

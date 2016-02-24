@@ -22,4 +22,3 @@ require_once 'core/data/productextra.php';
 require_once 'core/data/productlist.php';
 require_once 'core/data/shippingdata.php';
 require_once 'core/data/taxationdata.php';
-require_once 'core/registration.php';

@@ -81,7 +81,6 @@ add_action( 'cpf_init_pageview', 'cart_product_feed_admin_page_action' );
 function cart_product_feed_admin_page() {
 
 	require_once 'cart-product-wpincludes.php';
-	require_once 'core/classes/dialoglicensekey.php';
 	include_once 'core/classes/dialogfeedpage.php';
 	require_once 'core/feeds/basicfeed.php';
 
@@ -121,15 +120,6 @@ function cart_product_feed_admin_page_action()
 		$action = $_GET['action'];
 				
 	switch ($action) {
-		case 'update_license':
-			//I think this is AJAX only now -K
-			//No... it is still used (2014/08/25) -K
-			if ( isset( $_POST['license_key'] ) ) {
-				$licence_key = $_POST['license_key'];
-				if ( $licence_key != '' )
-					update_option( 'cp_licensekey', $licence_key );
-			}
-			break;
 		case 'reset_attributes':
 			//I don't think this is used -K
 			global $wpdb, $woocommerce;
@@ -154,16 +144,9 @@ function cart_product_feed_admin_page_action()
 			phpinfo(INFO_GENERAL + INFO_CONFIGURATION + INFO_MODULES);
 			return;
 		}
-		if ($debug == 'reg') {
-			echo "<pre>\r\n";
-			new PLicense(true);
-			echo "</pre>\r\n";
-		}
 	}
 
   # Get Variables from storage ( retrieve from wherever it's stored - DB, file, etc... )
-
-	$reg = new PLicense();
 
 	//Main content
 	echo '
@@ -179,9 +162,9 @@ function cart_product_feed_admin_page_action()
 	//WordPress Header ( May contain a message )
 
 	global $message;
-	if ( strlen($message) > 0 && strlen($reg->error_message) > 0 )
+	if ( strlen($message) > 0 )
 		$message .= '<br>'; //insert break after local message (if present)
-	$message .= $reg->error_message;
+
 	if ( strlen($message) > 0 ) 
 	{
 		//echo '<div id="setting-error-settings_updated" class="error settings-error">'
@@ -200,10 +183,6 @@ function cart_product_feed_admin_page_action()
 		echo PEditFeedDialog::pageBody($source_feed_id);
 	}
 
-	if ( !$reg->valid ) {
-	  //echo PLicenseKeyDialog::large_registration_dialog( '' );
-	}
-
 }
 
 /**
@@ -216,7 +195,6 @@ add_action( 'cpf_init_pageview_manage', 'cart_product_feed_manage_page_action' )
 function cart_product_feed_manage_page() {
 
 	require_once 'cart-product-wpincludes.php';
-	require_once 'core/classes/dialoglicensekey.php';
 	include_once 'core/classes/dialogfeedpage.php';
 
 	global $pfcore;
@@ -227,12 +205,5 @@ function cart_product_feed_manage_page() {
 }
 
 function cart_product_feed_manage_page_action() {
-
-	$reg = new PLicense();
-
 	require_once 'cart-product-manage-feeds.php';
-
-	//if ( !$reg->valid )
-		//echo PLicenseKeyDialog::large_registration_dialog( '' );
-
 }

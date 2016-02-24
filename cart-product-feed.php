@@ -15,43 +15,6 @@ Note: "purple" term exists from legacy plugin name. Classnames in "P" for the sa
       license GNU General Public License version 3 or later; see GPLv3.txt
 ***********************************************************/
 
-// Create a helper function for easy SDK access.
-function pxgpffw_fs() {
-    global $pxgpffw_fs;
-
-    if ( ! isset( $pxgpffw_fs ) ) {
-        // Include Freemius SDK.
-        require_once dirname(__FILE__) . '/freemius/start.php';
-
-        $pxgpffw_fs = fs_dynamic_init( array(
-            'id'                => '145',
-            'slug'              => 'purple-xmls-google-product-feed-for-woocommerce',
-            'public_key'        => 'pk_273f3403b22ff403ec780f5254e2e',
-            'is_premium'        => false,
-            'has_addons'        => false,
-            'has_paid_plans'    => false,
-            'menu'              => array(
-                'slug'       => 'cart-product-feed-admin',
-                'account'    => false
-            ),
-        ) );
-    }
-
-    return $pxgpffw_fs;
-}
-function pxgpffw_fs_support_url($support_forum_url)
-{
-	return 'http://www.exportfeed.com/support/';
-}
-
-function pxgpffw_fs_support_submenu($support_forum_submenu)
-{
-	return __fs( 'support' );
-}
-
-pxgpffw_fs()->add_filter('support_forum_url', 'pxgpffw_fs_support_url');
-pxgpffw_fs()->add_filter('support_forum_submenu', 'pxgpffw_fs_support_submenu');
-
 
 require_once dirname(__FILE__) . '/../../../wp-admin/includes/plugin.php';
 $plugin_version_data = get_plugin_data( __FILE__ );
@@ -79,9 +42,6 @@ if (get_option('cp_feed_order') == '')
 
 if (get_option('cp_feed_delay') == '')
     add_option('cp_feed_delay', "43200");
-
-if (get_option('cp_licensekey') == '')
-    add_option('cp_licensekey', "none");
 
 if (get_option('cp_localkey') == '')
     add_option('cp_localkey', "none");
@@ -165,10 +125,6 @@ function update_all_cart_feeds($doRegCheck = true) {
 
 	require_once 'cart-product-wpincludes.php'; //The rest of the required-files moved here
 	require_once 'core/data/savedfeed.php';
-
-	$reg = new PLicense();
-	if ($doRegCheck && ($reg->results["status"] != "Active"))
-		return;
 
 	do_action('load_cpf_modifiers');
 	add_action( 'get_feed_main_hook', 'update_all_cart_feeds_step_2' );

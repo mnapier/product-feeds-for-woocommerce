@@ -20,13 +20,9 @@ class PFeedPageDialogs {
 			</div>';
 
 		if ($pfcore->cmsName == 'WordPress') {
-			$reg = new PLicense();
-			if ($reg->valid)
 				$lic = '<div style="position:absolute; left:300px; top:60px">
 					 <a class="button-primary" type="submit" value="" id="submit" name="submit" href="http://www.exportfeed.com/support/" target="_blank">Thank You For Supporting The Project</a>
 						</div>';
-			else
-				$lic = PLicenseKeyDialog::small_registration_dialog('');
 		} else
 			$lic = '';
 

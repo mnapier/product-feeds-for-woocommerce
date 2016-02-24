@@ -68,10 +68,6 @@ class PFeedOverride extends PBaseFeedOverride {
 						$parent->getMapping($params[1])->deleted = true;
 					}
 					break;
-				case 'deletelicensekeys':
-					$reg = new PLicense();
-					$reg->unregisterAll();
-					break;
 				case 'limitoutput':
 					if ((strtolower($params[1]) == 'from') && isset($params[4])) {
 						$parent->has_product_range = true;
@@ -158,10 +154,6 @@ class PFeedOverride extends PBaseFeedOverride {
 					$recent_attribute = $parent->getMapping($params[1]);
 					if ($recent_attribute != null)
 						$recent_attribute->$params[2] = $params[3];
-					break;
-				case 'setlicensekey':
-					$reg = new PLicense();
-					$reg->setLicenseKey($params[1]);
 					break;
 				case 'setparam':
 					//For example, allows AmazonSC to set the localized name after mapAttribute

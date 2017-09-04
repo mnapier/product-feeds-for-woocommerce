@@ -1,0 +1,30 @@
+Clothing
+    Clothing > Coats
+    Clothing > Denim
+    Clothing > Dresses
+        Clothing > Dresses > Day
+        Clothing > Dresses > Evening
+    Clothing > Jackets
+    Clothing > Jumpsuits
+    Clothing > Knitwear
+    Clothing > Skirts/Shorts
+    Clothing > Tops
+        Clothing > Tops > Long Sleeved
+        Clothing > Tops > Short Sleeved
+        Clothing > Tops > Sleeveless
+    Clothing > Trousers
+Shoes
+    Shoes > Boots
+    Shoes > Sandals
+    Shoes > Trainers
+    Shoes > High Heel
+    Shoes > Mid Heel
+    Shoes > Flat
+Accessories
+    Accessories > Bags
+    Accessories > Belts
+    Accessories > Gloves
+    Accessories > Hats
+    Accessories > Jewellery
+    Accessories > Scarves
+    Accessories > Sunglasses

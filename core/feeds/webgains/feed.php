@@ -1,5 +1,5 @@
 <?php
-
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
 	/********************************************************************
 	Version 3.0
 	A Newegg Feed
@@ -65,7 +65,7 @@ class PWebgainsFeed extends PCSVFeedEx {
 			{				
 				if ( !isset($product->attributes[$thisAttributeMapping->attributeName]) || strlen($product->attributes[$thisAttributeMapping->attributeName]) == 0 )
 				{
-					$this->addErrorMessage(12000, 'Missing required: ' . $thisAttributeMapping->mapTo);			
+					$this->addErrorMessage(12000, 'Missing required: ' . $thisAttributeMapping->mapTo,false,$product->attributes['title']);			
 					$this->productCount--;
 					//return;
 				}
@@ -77,5 +77,3 @@ class PWebgainsFeed extends PCSVFeedEx {
   }
 
 }
-
-?>

@@ -57,7 +57,7 @@ class PProductList {
 	}
 
 	public function getProductList($parent, $remote_category) {
-	
+
 		global $pfcore;
 
 		$parent->logActivity('Retrieving product list from database');
@@ -71,7 +71,7 @@ class PProductList {
 		$db = JFactory::getDBO();
 
 		foreach ($this->products as $index => $prod) {
-		
+
 			if ($index % 100 == 0)
 				$parent->logActivity('Converting master product list...' . round($index / count($this->products) * 100) . '%' );
 
@@ -101,7 +101,7 @@ class PProductList {
 			$category_names = explode(',', $prod->category_names);
 
 			$item = new PAProduct();
-	  
+
 			//Basics
 			$item->id = $prod->product_id;
 			$item->attributes['title'] = $prod->product_name;
@@ -172,7 +172,7 @@ class PProductList {
 					}
 				}
 			}
-	  
+
 			//If this has a parent, use the parent's attributes if necessary
 			//one day we need to figure out how to know if attributes are blank
 			//on purpose (eg user hit "override parent" then left it empty

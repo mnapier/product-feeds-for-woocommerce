@@ -1,5 +1,5 @@
 <?php
-
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
   /********************************************************************
   Version 2.0
     A Feed for Products by Category
@@ -16,5 +16,3 @@ class PCategoryProductsFeed {
 		//PCategoryProductsFeed no longer exists
 	}
 }
-
-?>

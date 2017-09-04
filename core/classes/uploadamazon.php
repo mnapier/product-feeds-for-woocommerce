@@ -1,22 +1,23 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+/********************************************************************
+ * Version 1.0
+ * Upload to Amazon procedures
+ * Copyright 2014 Purple Turtle Productions. All rights reserved.
+ * license    GNU General Public License version 3 or later; see GPLv3.txt
+ * By:
+ * Not for production code (yet)
+ * Example of how to implement the Amazon Upload code in CMS-Agnostic fashion
+ ********************************************************************/
+class PAmazonUpload
+{
 
-	/********************************************************************
-	Version 1.0
-		Upload to Amazon procedures
-		Copyright 2014 Purple Turtle Productions. All rights reserved.
-		license	GNU General Public License version 3 or later; see GPLv3.txt
-	By:
-		Not for production code (yet)
-		Example of how to implement the Amazon Upload code in CMS-Agnostic fashion
-	********************************************************************/
-
-class PAmazonUpload {
-
-	public static function uploadFeed() {
+    public function uploadFeed()
+    {
 
         global $pfcore;
 
-        $remember = $pfcore->settingGet("cpf_remember_$this->service_name");
+        $remember = $pfcore->settingGet("cpf_remember_{$this->service_name}");
         $seller_id = null;
         $marketplace_id = null;
         $access_id = null;
@@ -61,6 +62,6 @@ class PAmazonUpload {
                 <div style="clear: both;">&nbsp;</div>
                 ';
         return $output;
-	}
+    }
 
 }

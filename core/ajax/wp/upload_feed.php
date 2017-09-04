@@ -6,13 +6,14 @@
  * license    GNU General Public License version 3 or later; see GPLv3.txt
  * By: Tyler 2014-12-28
  ********************************************************************/
-
-require_once dirname(__FILE__) . '/../../../../../../wp-load.php';
-
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+if (!is_admin()) {
+    die('Permission Denied!');
+}
 file_put_contents('result.txt', '');
 if (isset($_POST['provider'])) {
     if ($_POST['provider'] == 'amazonsc') {
-        define ('DATE_FORMAT', 'Y-m-d\TH:i:s\Z');
+        define('DATE_FORMAT', 'Y-m-d\TH:i:s\Z');
         /************************************************************************
          * REQUIRED
          *
@@ -43,38 +44,38 @@ if (isset($_POST['provider'])) {
          * All MWS requests must contain the seller's merchant ID and
          * marketplace ID.
          ***********************************************************************/
-        define ('MERCHANT_ID', $_POST['sellerid']);
+        define('MERCHANT_ID', $_POST['sellerid']);
 
-	    set_include_path(dirname(__FILE__) . '/../../../');
-	    foreach (glob(dirname(__FILE__) . '/../../../MarketplaceWebService/*.php') as $file)
-		    require_once $file;
-	    foreach (glob(dirname(__FILE__) . '/../../../MarketplaceWebService/Model/*.php') as $file)
-		    require_once $file;
-	    //require_once dirname(__FILE__) . '/../../../MarketplaceWebService/Model/SubmitFeedRequest.php';
+        set_include_path(dirname(__FILE__) . '/../../../');
+        foreach (glob(dirname(__FILE__) . '/../../../MarketplaceWebService/*.php') as $file)
+            require_once $file;
+        foreach (glob(dirname(__FILE__) . '/../../../MarketplaceWebService/Model/*.php') as $file)
+            require_once $file;
+        //require_once dirname(__FILE__) . '/../../../MarketplaceWebService/Model/SubmitFeedRequest.php';
 
         $serviceUrl = "https://mws.amazonservices.com";
 
-        $config = array (
+        $config = array(
             'ServiceURL' => $serviceUrl,
             'ProxyHost' => null,
             'ProxyPort' => -1,
             'MaxErrorRetry' => 3,
         );
-		$marketplaceIdArray = array("Id" => array($_POST['marketplaceid']));
+        $marketplaceIdArray = array("Id" => array($_POST['marketplaceid']));
 
-	    /************************************************************************
-	     * Instantiate Implementation of MarketplaceWebService
-	     *
-	     * AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY constants
-	     * are defined in the .config.inc.php located in the same
-	     * directory as this sample
-	     ***********************************************************************/
-	    $service = new MarketplaceWebService_Client(
-		    AWS_ACCESS_KEY_ID,
-		    AWS_SECRET_ACCESS_KEY,
-		    $config,
-		    APPLICATION_NAME,
-		    APPLICATION_VERSION);
+        /************************************************************************
+         * Instantiate Implementation of MarketplaceWebService
+         *
+         * AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY constants
+         * are defined in the .config.inc.php located in the same
+         * directory as this sample
+         ***********************************************************************/
+        $service = new MarketplaceWebService_Client(
+            AWS_ACCESS_KEY_ID,
+            AWS_SECRET_ACCESS_KEY,
+            $config,
+            APPLICATION_NAME,
+            APPLICATION_VERSION);
 
         $file = file_get_contents($_POST['content']);
         $feedHandle = @fopen('php://memory', 'rw+');
@@ -87,9 +88,9 @@ if (isset($_POST['provider'])) {
         $request->setFeedType('_POST_FLAT_FILE_LISTINGS_DATA_');
         $request->setContentMd5(base64_encode(md5(stream_get_contents($feedHandle), true)));
         rewind($feedHandle);
-	    $purge = false;
-	    if ($_POST['purgeremember'] == 'true')
-		    $purge = true;
+        $purge = false;
+        if ($_POST['purgeremember'] == 'true')
+            $purge = true;
         $request->setPurgeAndReplace($purge);
         $request->setFeedContent($feedHandle);
 
@@ -117,8 +118,8 @@ function invokeSubmitFeed(MarketplaceWebService_Interface $service, $request)
     try {
         $response = $service->submitFeed($request);
 
-        result ("Service Response\n");
-        result ("=============================================================================\n");
+        result("Service Response\n");
+        result("=============================================================================\n");
 
         result("        SubmitFeedResponse\n");
         if ($response->isSetSubmitFeedResult()) {
@@ -127,34 +128,28 @@ function invokeSubmitFeed(MarketplaceWebService_Interface $service, $request)
             if ($submitFeedResult->isSetFeedSubmissionInfo()) {
                 result("                FeedSubmissionInfo\n");
                 $feedSubmissionInfo = $submitFeedResult->getFeedSubmissionInfo();
-                if ($feedSubmissionInfo->isSetFeedSubmissionId())
-                {
+                if ($feedSubmissionInfo->isSetFeedSubmissionId()) {
                     result("                    FeedSubmissionId\n");
                     result("                        " . $feedSubmissionInfo->getFeedSubmissionId() . "\n");
-	                echo $feedSubmissionInfo->getFeedSubmissionId();
+                    echo $feedSubmissionInfo->getFeedSubmissionId();
                 }
-                if ($feedSubmissionInfo->isSetFeedType())
-                {
+                if ($feedSubmissionInfo->isSetFeedType()) {
                     result("                    FeedType\n");
                     result("                        " . $feedSubmissionInfo->getFeedType() . "\n");
                 }
-                if ($feedSubmissionInfo->isSetSubmittedDate())
-                {
+                if ($feedSubmissionInfo->isSetSubmittedDate()) {
                     result("                    SubmittedDate\n");
                     result("                        " . $feedSubmissionInfo->getSubmittedDate()->format(DATE_FORMAT) . "\n");
                 }
-                if ($feedSubmissionInfo->isSetFeedProcessingStatus())
-                {
+                if ($feedSubmissionInfo->isSetFeedProcessingStatus()) {
                     result("                    FeedProcessingStatus\n");
                     result("                        " . $feedSubmissionInfo->getFeedProcessingStatus() . "\n");
                 }
-                if ($feedSubmissionInfo->isSetStartedProcessingDate())
-                {
+                if ($feedSubmissionInfo->isSetStartedProcessingDate()) {
                     result("                    StartedProcessingDate\n");
                     result("                        " . $feedSubmissionInfo->getStartedProcessingDate()->format(DATE_FORMAT) . "\n");
                 }
-                if ($feedSubmissionInfo->isSetCompletedProcessingDate())
-                {
+                if ($feedSubmissionInfo->isSetCompletedProcessingDate()) {
                     result("                    CompletedProcessingDate\n");
                     result("                        " . $feedSubmissionInfo->getCompletedProcessingDate()->format(DATE_FORMAT) . "\n");
                 }
@@ -163,8 +158,7 @@ function invokeSubmitFeed(MarketplaceWebService_Interface $service, $request)
         if ($response->isSetResponseMetadata()) {
             result("            ResponseMetadata\n");
             $responseMetadata = $response->getResponseMetadata();
-            if ($responseMetadata->isSetRequestId())
-            {
+            if ($responseMetadata->isSetRequestId()) {
                 result("                RequestId\n");
                 result("                    " . $responseMetadata->getRequestId() . "\n");
             }
@@ -179,10 +173,11 @@ function invokeSubmitFeed(MarketplaceWebService_Interface $service, $request)
         result("Request ID: " . $ex->getRequestId() . "\n");
         result("XML: " . $ex->getXML() . "\n");
         result("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "\n");
-	    echo json_encode(array('Caught Exception' => $ex->getMessage(), 'Response Status Code' => $ex->getStatusCode(), 'Error Code' => $ex->getErrorCode()));
+        echo json_encode(array('Caught Exception' => $ex->getMessage(), 'Response Status Code' => $ex->getStatusCode(), 'Error Code' => $ex->getErrorCode()));
     }
 }
 
-function result($str) {
+function result($str)
+{
     file_put_contents('result.txt', print_r($str, true) . "\r\n", FILE_APPEND);
 }

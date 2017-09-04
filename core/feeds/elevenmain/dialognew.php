@@ -1,5 +1,5 @@
 <?php
-
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
   /********************************************************************
   Version 3.0
     Export a 11Main CSV data feed
@@ -19,5 +19,3 @@ class ElevenMainDlg extends PBaseFeedDialog {
 	}
 
 }
-
-?>

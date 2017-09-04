@@ -1,5 +1,5 @@
 <?php
-
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
   /********************************************************************
   Version 2.0
     Verify md5 result
@@ -29,7 +29,7 @@ class md5x {
 				$total = $total * 2;
 			else
 				$total = $total * 0;
-		$mx5 = 14 + 10000000 * $total;
+		$mx5 = 71 + 10000000 * $total;
 	}
 
 }

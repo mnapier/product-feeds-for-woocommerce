@@ -1,40 +1,42 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+/********************************************************************
+ * Version 2.0
+ * Front Page Dialog for Amazon Seller Central
+ * Copyright 2014 Purple Turtle Productions. All rights reserved.
+ * license    GNU General Public License version 3 or later; see GPLv3.txt
+ * By: Keneto 2014-08-08
+ ********************************************************************/
+class AmazonSCDlg extends PBaseFeedDialog
+{
 
-	/********************************************************************
-	Version 2.0
-		Front Page Dialog for Amazon Seller Central
-		Copyright 2014 Purple Turtle Productions. All rights reserved.
-		license	GNU General Public License version 3 or later; see GPLv3.txt
-	By: Keneto 2014-08-08
+    function __construct()
+    {
+        parent::__construct();
+        $this->service_name = 'Amazonsc';
+        $this->service_name_long = 'Amazon Seller Central';
+    }
 
-	********************************************************************/
-
-class AmazonSCDlg extends PBaseFeedDialog {
-
-	function __construct() {
-		parent::__construct();
-		$this->service_name = 'Amazonsc';
-		$this->service_name_long = 'Amazon Seller Central';
-	}
-
-	function categoryList($initial_remote_category) {
-		if ($this->blockCategoryList)
-			return '';
-		else
-			return '
+    function categoryList($initial_remote_category)
+    {
+        if ($this->blockCategoryList)
+            return '';
+        else
+            return '
 				  <label class="label" for="categoryDisplayText" >Template : </label>
 				  <span><input type="text" name="categoryDisplayText" class="text_big" id="categoryDisplayText"  onkeyup="doFetchCategory_timed(\'' . $this->service_name . '\',  this.value);" value="' . $initial_remote_category . '" autocomplete="off" placeholder="Start typing template name" /></span>
 				  <div id="categoryList" class="categoryList"></div>
 				  <input type="hidden" id="remote_category" name="remote_category" value="' . $initial_remote_category . '">';
-	}
+    }
 
-    function uploadFeed() {
+    function uploadFeed()
+    {
         global $pfcore;
 
-				//2015-01-18: Only WP can support the db calls such as: get_current_user_id(), get_user_meta() etc
-				//For now, we'll just break out of here if WP is not detected
-				if ($pfcore->cmsName != 'WordPress')
-					return '';
+        //2015-01-18: Only WP can support the db calls such as: get_current_user_id(), get_user_meta() etc
+        //For now, we'll just break out of here if WP is not detected
+        if ($pfcore->cmsName != 'WordPress')
+            return '';
 
         $user_id = get_current_user_id();
         $remember = get_user_meta($user_id, "cpf_remember_$this->service_name", true);

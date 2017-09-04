@@ -1,5 +1,4 @@
 <?php
-
 /********************************************************************
  * Version 1.0
  * Update user's saved credential information for a particular provider.
@@ -9,8 +8,10 @@
  ********************************************************************/
 
 //To do: This should one day just use the existing update_setting script -KH
-
-require_once dirname(__FILE__) . '/../../../../../../wp-load.php';
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+if (!is_admin()) {
+    die('Permission Denied!');
+}
 
 if (isset($_POST['remember'])) {
     $remember = $_POST['remember'];

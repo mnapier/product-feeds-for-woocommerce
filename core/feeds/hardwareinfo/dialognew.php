@@ -1,5 +1,5 @@
 <?php
-
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
   /********************************************************************
   Version 3.0
     Export a Become CSV data feed
@@ -20,5 +20,3 @@ class HardwareInfoDlg extends PBaseFeedDialog {
 	}
 
 }
-
-?>

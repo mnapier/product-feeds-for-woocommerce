@@ -1,5 +1,5 @@
 <?php
-
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
   /********************************************************************
   Version 2.0
     A PriceGrabber Feed
@@ -85,7 +85,7 @@ class PPriceGrabberFeed extends PCSVFeedEx {
 			$product->attributes['stock_status'] = 'No';
 
 		if (!isset($product->attributes['brand']) || (strlen($product->attributes['brand']) == 0))
-				$this->addErrorMessage(15000, 'Missing brand for ' . $product->attributes['title']);
+				$this->addErrorMessage(15000, 'Missing brand ' ,false, $product->attributes['title']);
 
 		return parent::formatProduct($product);
 	}
@@ -102,5 +102,3 @@ class PPriceGrabberFeed extends PCSVFeedEx {
 	}
 
 }
-
-?>

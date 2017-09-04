@@ -1,0 +1,351 @@
+# PriceRunner_Product_Taxonomy_Version: 2016-06-08
+Vision
+Vision > Blu-ray and DVD Players
+Vision > Digital TV Boxes
+Vision > Home Cinema Systems
+Vision > Media Players
+Vision > Projector Accessories
+Vision > Projector Screens
+Vision > Projectors
+Vision > Speakers
+Vision > TVs
+Vision > TV Cabinets and Stands
+Vision > TV Accessories
+Vision > Universal Remote Controls
+Vision > VR - Virtual reality
+
+Sound  
+Sound > Alarm Clocks 
+Sound > Amplifiers and Receivers 
+Sound > Audio Systems 
+Sound > CD Players 
+Sound > D/A Converter (DAC) 
+Sound > DJ Equipment 
+Sound > DJ Mixers 
+Sound > DJ Players 
+Sound > Guitar and Bass Amplifiers 
+Sound > Headphones 
+Sound > Home A/V Accessories 
+Sound > Home Cinema Systems 
+Sound > Karaoke 
+Sound > Microphones 
+Sound > Musical Accessories 
+Sound > Musical Instruments 
+Sound > Radios 
+Sound > Speaker Accessories 
+Sound > Speakers 
+Sound > Studio Mixers 
+Sound > Studio and Recording Equipment 
+Sound > Turntables 
+Sound > Voice Recorders 
+Sound > Walkie Talkies 
+Sound > Wireless Audio/Video 
+Sound > TVs 
+Sound > Blu-ray and DVD Players 
+Sound > MP3 Players 
+
+Photography
+Photography > Analogue Cameras 
+Photography > Camcorder Accessories 
+Photography > Camcorders 
+Photography > Camera Lenses 
+Photography > Digital Cameras 
+Photography > Digital Photo Frames 
+Photography > Lighting and Studio Equipment 
+Photography > Camera Accessories 
+Photography > Camera Bags 
+Photography > Camera Flashes 
+Photography > Camera Lens Filters 
+Photography > Camera Tripods 
+Photography > Memory Cards 
+Photography > Printers 
+Photography > Ink and Toners 
+
+Games
+Games > Board Games 
+Games > Console Accessories 
+Games > Game Consoles 
+Games > Game Controllers 
+Games > Games: GameBoy Advance 
+Games > Games: PlayStation2 
+Games > Games: Xbox 
+Games > Mac Download Games 
+Games > Mac Games 
+Games > Nintendo 3DS Games 
+Games > Nintendo DS Games 
+Games > Nintendo Wii Games 
+Games > Nintendo Wii U Games 
+Games > PC Games 
+Games > PlayStation 3 Games 
+Games > PlayStation 4 Games 
+Games > PlayStation Portable Games 
+Games > Playstation Vita Games 
+Games > Xbox 360 Games 
+Games > Xbox One Games 
+Games > Memory Cards 
+Games > DVDs 
+
+Computers
+Computers > Desktop Computers 
+Computers > Laptops 
+Computers > Sat Navs 
+Computers > Servers 
+Computers > Tablets 
+Computers > eReaders 
+Computers > Software 
+Computers > Graphics Cards 
+Computers > Network Cards 
+Computers > Monitors 
+Computers > Hard Drives 
+Computers > PC Games 
+
+
+Components
+Components > CPUs 
+Components > Computer Cases 
+Components > Computer Cooling 
+Components > Graphics Cards 
+Components > Hard Drive Accessories 
+Components > Memory Chips 
+Components > Motherboards 
+Components > Network Cards 
+Components > PSU Units 
+Components > Sound Cards 
+Components > TV Cards 
+Components > Tablet Accessories 
+Components > Software 
+Components > Laptops 
+Components > Desktop 
+Components > Computers 
+Components > Printers 
+Components > Hard Drives 
+
+Home Appliances
+Home Appliances > Cookers 
+Home Appliances > Dishwashers 
+Home Appliances > Extractor Fans 
+Home Appliances > Freezers 
+Home Appliances > Fridge Freezers 
+Home Appliances > Fridges 
+Home Appliances > Hobs 
+Home Appliances > Microwaves 
+Home Appliances > Other Appliance Accessories 
+Home Appliances > Ovens 
+Home Appliances > Tumble Dryers 
+Home Appliances > Vacuum Cleaner Accessories 
+Home Appliances > Vacuum Cleaners 
+Home Appliances > Washing Machines 
+Home Appliances > Wine Coolers 
+Home Appliances > Breadmakers 
+Home Appliances > Coffee Grinders 
+Home Appliances > Coffee Makers 
+Home Appliances > Fans 
+Home Appliances > Hand Blenders 
+Home Appliances > Kettles 
+Home Appliances > Steam Irons 
+Home Appliances > Toasters 
+
+Small Home Appliances
+Small Home Appliances > Air Treatment 
+Small Home Appliances > Blenders 
+Small Home Appliances > Breadmakers 
+Small Home Appliances > Coffee Brewers 
+Small Home Appliances > Coffee Grinders 
+Small Home Appliances > Coffee Makers 
+Small Home Appliances > Deep Fat Fryers 
+Small Home Appliances > Fans 
+Small Home Appliances > Food Mixers and Food Processors 
+Small Home Appliances > Food cookers 
+Small Home Appliances > Hand Blenders 
+Small Home Appliances > Hand Mixers 
+Small Home Appliances > Ice Cream Makers 
+Small Home Appliances > Ice Makers 
+Small Home Appliances > Juicers 
+Small Home Appliances > Kettles 
+Small Home Appliances > Kitchen Scales 
+Small Home Appliances > Soft Drink Makers 
+Small Home Appliances > Steam Irons 
+Small Home Appliances > Table Grills and Sandwich Toasters 
+Small Home Appliances > Toasters 
+Small Home Appliances > Waffle Makers 
+Small Home Appliances > Vacuum Cleaners 
+Small Home Appliances > Fridge Freezers 
+Small Home Appliances > Dishwashers 
+Small Home Appliances > Freezers 
+Small Home Appliances > Washing Machines 
+ 
+Entertainment
+Entertainment > Books 
+Entertainment > CDs 
+Entertainment > DVDs 
+Entertainment > CD Players 
+Entertainment > Blu-ray and DVD Players 
+
+Phones
+Phones > Landline Accessories 
+Phones > Landline Phones 
+Phones > Mobile Phone Accessories 
+Phones > Mobile Phones 
+Phones > Mobile Phones Monthly Contract 
+Phones > Mobile Phones: Pay-as-you-go 
+Phones > Smart Watches 
+Phones > Fax Machines 
+
+Kids and Family
+Kids and Family > Arts and Crafts 
+Kids and Family > Baby Care 
+Kids and Family > Child Car Seat Accessories 
+Kids and Family > Child Car Seats 
+Kids and Family > Child Safety 
+Kids and Family > Fancy Dress 
+Kids and Family > Hobby Products 
+Kids and Family > Jigsaw Puzzles 
+Kids and Family > Kid's Room 
+Kids and Family > Outdoor Toys 
+Kids and Family > Pushchair Accessories 
+Kids and Family > Pushchairs Toys 
+
+Health and Beauty
+Health and Beauty > First Aid 
+Health and Beauty > Toiletries 
+Health and Beauty > Cosmetics 
+Health and Beauty > Hair Stylers 
+Health and Beauty > Hair Trimmers 
+Health and Beauty > Hairdryers 
+Health and Beauty > Men's Shavers 
+Health and Beauty > Nail Care 
+Health and Beauty > Women's Hair Removal 
+Health and Beauty > Contact Lens Accessories 
+Health and Beauty > Contact Lenses 
+Health and Beauty > Glasses 
+Health and Beauty > Bathroom Scales 
+Health and Beauty > Health 
+Health and Beauty > Medicines 
+Health and Beauty > Nutrition and Supplements 
+Health and Beauty > Relaxation 
+Health and Beauty > Adult 
+Health and Beauty > Dental Care 
+Health and Beauty > Electric Toothbrushes 
+Health and Beauty > Eye Care 
+Health and Beauty > Fragrance 
+Health and Beauty > Hair Products 
+Health and Beauty > Shaving accessories 
+Health and Beauty > Skincare 
+Health and Beauty > Women's Clothing 
+Health and Beauty > Children's Clothing 
+Health and Beauty > Men's Clothing 
+
+Home and Garden
+Home and Garden > Magazines 
+Home and Garden > Pressure Washers 
+Home and Garden > Bathroom Accessories 
+Home and Garden > Bathroom Furniture 
+Home and Garden > Bathroom Sinks 
+Home and Garden > Bathtubs 
+Home and Garden > Bidets 
+Home and Garden > Compost Toilets 
+Home and Garden > Heated Towel Rails 
+Home and Garden > Hot Tubs and Whirlpool Baths 
+Home and Garden > Shower Enclosures 
+Home and Garden > Shower Sets 
+Home and Garden > Taps 
+Home and Garden > Toilets 
+Home and Garden > Beer and Spirits 
+Home and Garden > Chocolate 
+Home and Garden > Food and Drink 
+Home and Garden > Wine 
+Home and Garden > BBQ Accessories 
+Home and Garden > BBQs 
+Home and Garden > Garden Accessories 
+Home and Garden > Garden Power Tools 
+Home and Garden > Garden Tools 
+Home and Garden > Greenhouses 
+Home and Garden > Lawnmowers 
+Home and Garden > Outbuildings 
+Home and Garden > Outdoor Furniture 
+Home and Garden > Plants 
+Home and Garden > Swimming Pools 
+Home and Garden > Batteries and Chargers 
+Home and Garden > Beds and Mattresses 
+Home and Garden > Carpets and Rugs 
+Home and Garden > Christmas 
+Home and Garden > Cleaning Supplies 
+Home and Garden > Curtains 
+Home and Garden > Fireplaces 
+Home and Garden > Flowers 
+Home and Garden > Furniture 
+Home and Garden > Gadgets 
+Home and Garden > Gifts 
+Home and Garden > Home Accessories 
+Home and Garden > Home Styling 
+Home and Garden > Party Supplies 
+Home and Garden > Pets 
+Home and Garden > Saunas 
+Home and Garden > Security 
+Home and Garden > Sewing Machines 
+Home and Garden > Solar Panels 
+Home and Garden > Textiles 
+Home and Garden > Weather Stations 
+Home and Garden > Bakeware 
+Home and Garden > Cookware 
+Home and Garden > Kitchen Accessories 
+Home and Garden > Kitchen Knives 
+Home and Garden > Kitchen Sinks 
+Home and Garden > Kitchen Units 
+Home and Garden > Indoor Lighting 
+Home and Garden > Light Bulbs 
+Home and Garden > Outdoor Lighting
+Home and Garden > Torches 
+Home and Garden > Do it yourself 
+
+Office Equipment
+Office Equipment > Barcode Scanners 
+Office Equipment > Calculators 
+Office Equipment > Fax Machines 
+Office Equipment > Office Supplies 
+Office Equipment > Desktop Computers 
+Office Equipment > Laptops 
+Office Equipment > Landline Phones 
+
+Sports and Outdoor
+Sports and Outdoor > Activity Trackers 
+Sports and Outdoor > Badminton 
+Sports and Outdoor > Basketball 
+Sports and Outdoor > Bike Accessories 
+Sports and Outdoor > Bike Spare Parts 
+Sports and Outdoor > Bikes 
+Sports and Outdoor > Binoculars 
+Sports and Outdoor > Boating 
+Sports and Outdoor > Boxing and Martial Arts 
+Sports and Outdoor > Camping 
+Sports and Outdoor > Climbing 
+Sports and Outdoor > Cricket 
+Sports and Outdoor > Downhill skiing 
+Sports and Outdoor > Equestrian 
+Sports and Outdoor > Fishing 
+Sports and Outdoor > Fitness Equipment 
+Sports and Outdoor > Fitness Machines 
+Sports and Outdoor > Football 
+Sports and Outdoor > Handball 
+Sports and Outdoor > Hockey 
+Sports and Outdoor > Hunting 
+Sports and Outdoor > Ice Hockey 
+Sports and Outdoor > Ice Skating 
+Sports and Outdoor > Paintball 
+Sports and Outdoor > Poker Accessories 
+Sports and Outdoor > Rollerskates 
+Sports and Outdoor > Rugby 
+Sports and Outdoor > Skateboarding 
+Sports and Outdoor > Ski Equipment 
+Sports and Outdoor > Snooker 
+Sports and Outdoor > Snowboard 
+Sports and Outdoor > Sports Accessories 
+Sports and Outdoor > Sports fan apparel 
+Sports and Outdoor > Sportswear 
+Sports and Outdoor > Squash 
+Sports and Outdoor > Table Sports 
+Sports and Outdoor > Table Tennis 
+Sports and Outdoor > Tennis Water Sports 
+Sports and Outdoor > Golf Accessories 
+Sports and Outdoor > Golf Clubs 
+Sports and Outdoor > Nutrition and Supplements 

@@ -1,60 +1,67 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+/********************************************************************
+ * Version 2.0
+ * Load extra, related product data.
+ * For WordPress, this involves a trip to the taxonomy table
+ * For everyone else, not yet implemented
+ * Copyright 2014 Purple Turtle Productions. All rights reserved.
+ * license    GNU General Public License version 3 or later; see GPLv3.txt
+ * By: Keneto 2014-05-14
+ ********************************************************************/
+class PProductSupplementalData
+{
 
-  /********************************************************************
-  Version 2.0
-    Load extra, related product data.
-		For WordPress, this involves a trip to the taxonomy table
-		For everyone else, not yet implemented
-	  Copyright 2014 Purple Turtle Productions. All rights reserved.
-		license	GNU General Public License version 3 or later; see GPLv3.txt
-	By: Keneto 2014-05-14
-  ********************************************************************/
+    public $data = array();
+    public $initialized = false;
+    public $taxonomy = '';
 
-class PProductSupplementalData {
+    public function __construct($taxonomy)
+    {
+        $this->taxonomy = $taxonomy;
+    }
 
-	public $data = array();
-	public $initialized = false;
-	public $taxonomy = '';
+    public function check($attributeName, $item)
+    {
 
-	public function __construct($taxonomy) {
-		$this->taxonomy = $taxonomy;
-	}
+        if (!$this->initialized)
+            $this->getData();
 
-	public function check($attributeName, $item) {
+        foreach ($this->data as $datum) {
+            if ($datum->id == $item->id) {
+                if (strlen($datum->name) > 0)
+                    $item->attributes[$attributeName] = $datum->name;
+                break;
+            }
+        }
 
-		if (!$this->initialized)
-			$this->getData();
+    }
 
-		foreach($this->data as $datum) {
-			if ($datum->id == $item->id) {
-				if (strlen($datum->name) > 0)
-					$item->attributes[$attributeName] = $datum->name;
-				break;
-			}
-		}
+    public function getData()
+    {
+        $this->initialized = true;
+        global $pfcore;
+        $proc = 'getData' . $pfcore->callSuffix;
+        return $this->$proc();
+    }
 
-	}
+    public function getDataJ()
+    {
+    }
 
-	public function getData() {
-		$this->initialized = true;
-		global $pfcore;
-		$proc = 'getData' . $pfcore->callSuffix;
-		return $this->$proc();
-	}
+    public function getDataJH()
+    {
+    }
 
-	public function getDataJ() {
-	}
+    public function getDataJS()
+    {
+    }
 
-	public function getDataJH() {
-	}
+    public function getDataW()
+    {
 
-	public function getDataJS() {
-	}
-
-	public function getDataW() {
-
-		global $wpdb;
-		$sql = "
+        global $wpdb;
+        $sql = "
 			SELECT id, post_title, post_name, $wpdb->term_taxonomy.term_taxonomy_id, $wpdb->term_taxonomy.taxonomy, $wpdb->terms.name
 			FROM $wpdb->posts
 			LEFT JOIN $wpdb->term_relationships on ($wpdb->posts.ID = $wpdb->term_relationships.object_id)
@@ -63,14 +70,15 @@ class PProductSupplementalData {
 			WHERE $wpdb->posts.post_type='product'
 			AND $wpdb->term_taxonomy.taxonomy = '$this->taxonomy'
 		";
-		$this->data = $wpdb->get_results($sql);
+        $this->data = $wpdb->get_results($sql);
 
-	}
+    }
 
-	public function getDataWe() {
+    public function getDataWe()
+    {
 
-		global $wpdb;
-		$sql = "
+        global $wpdb;
+        $sql = "
 			SELECT id, post_title, post_name, $wpdb->term_taxonomy.term_taxonomy_id, $wpdb->term_taxonomy.taxonomy, $wpdb->terms.name
 			FROM $wpdb->posts
 			LEFT JOIN $wpdb->term_relationships on ($wpdb->posts.ID = $wpdb->term_relationships.object_id)
@@ -79,8 +87,8 @@ class PProductSupplementalData {
 			WHERE $wpdb->posts.post_type='wpsc-product'
 			AND $wpdb->term_taxonomy.taxonomy = '$this->taxonomy'
 		";
-		$this->data = $wpdb->get_results($sql);
+        $this->data = $wpdb->get_results($sql);
 
-	}
+    }
 
 }

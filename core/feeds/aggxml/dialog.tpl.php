@@ -46,7 +46,7 @@
 					<!-- ROW 3: Filename -->
 					<div class="feed-right-row">
 						<span class="label">File name for feed : </span>
-						<span ><input type="text" name="feed_filename" id="feed_filename" class="text_big" value="<?php echo $this->initial_filename; ?>" /></span>
+						<span ><input type="text" name="feed_filename" id="feed_filename_default" class="text_big" value="<?php echo $this->initial_filename; ?>" /></span>
 					</div>
 					<div class="feed-right-row">
 						<label>* If you use an existing file name, the file will be overwritten.</label>
@@ -55,7 +55,10 @@
 					<!-- ROW 4: Get Feed Button -->
 					<div class="feed-right-row">
 						<input type="hidden" name="RequestCode" value="<?php echo $this->service_name; ?>" />
-						<input class="cupid-green" type="button" onclick="doGetAlternateFeed('<?php echo $this->servName; ?>')" value="Get Feed" />
+						<input class="button-primary" type="button" onclick="doGetAlternateFeed('<?php echo $this->servName; ?>' , this)" value="Get Feed" style="width:45%;"/>
+						<br/><br/>
+						<div id="feed-message-display">&nbsp;</div>
+						<div id="cpf_feed_view"></div>
 						<div id="feed-error-display">&nbsp;</div>
 						<div id="feed-status-display">&nbsp;</div>
 					</div>

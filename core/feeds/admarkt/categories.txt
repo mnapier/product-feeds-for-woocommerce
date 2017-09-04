@@ -1,0 +1,615 @@
+#Marktplaats Categories
+200: Villas >  Owner-occupied housing > Housing
+300: Townhouse > Owner-occupied housing > Housing 
+500: Andel Apartments > Cooperative housing > Housing
+510: Cooperative housing - houses > Cooperative housing > Housing 
+600: Condos > Owner-occupied housing > Housing
+950: Villa Apartments > Owner-occupied housing > Housing 
+1100: Country Homes > Owner-occupied housing > Housing
+1425: Apartments for rent > Rental housing > Housing 
+1510: Rooms > Rental housing > Housing 
+1610: Houses > Rental housing > Housing 
+1650: Cohabitation > Rental housing > Housing
+1700: Full-Land > Owner-occupied housing > Housing 
+1800 Recreational Land Recreational Property Housing
+1900: Holiday Homes > Recreational Property > Housing 
+2000: Movable houses > other accommodation > Housing
+2100: Allotments > Recreational Property > Housing 
+2500: Properties abroad > Owner-occupied housing > Housing
+2700: Commercial properties > Commercial and rentals > Housing 
+2900: Business Land > Commercial and rentals > Housing
+3000: Business Lease > Commercial and rentals > Housing 
+
+5010: Dining Room Furniture > Architect designed, furniture and lighting > For the home
+5020: Living Room Furniture > Architect designed, furniture and lighting > For the home 
+5040: Other Designer Furniture > Architect designed, furniture and lighting > For the home
+5050: Lighting > Architect designed, furniture and lighting > For the home 
+5100: Dining room Furniture > Dining and living room furniture > For the home
+5210: Coffee tables and other tables > Dining and living room furniture > For the home 
+5220: Armchairs > Dining and living room furniture > For the home
+5230: Sofas and sofa groups > Dining and living room furniture > For the home 
+5310: Single beds > Beds and related products > For the home
+5320: Double beds > Beds and related products > For the home 
+5330: 3/4 and 1 Â½ beds > Beds and related products > For the home
+5340: Sofabeds > Beds and related products > For the home 
+5350: Other bedroom furniture and equipment > Beds and related products > For the home
+5600: Antique furniture > Art and antiques > For the home 
+
+5710: Chests, sideboards and similar furniture > Other furniture and accessories > For the home
+5720: Bookcases and shelving > Other furniture and accessories > For the home
+5730 Cabinets, display cases and similar > Other furniture and accessories > For the home
+5740: Desks and computer desks > Other furniture and accessories > For the home 
+5750: Other furniture > Other furniture and accessories > For the home
+5800: Carpets > Other furniture and accessories > For the home 
+5900: Curtains > Other furniture and accessories > For the home
+
+6010: Table lamps > Lighting > For the home 
+6020: Ceiling lamps > Lighting > For the home
+6030: Floor lamps > Lighting > For the home 
+6035: Wall > Lighting > For the home
+6040: Other indoor lighting > Lighting > For the home 
+6050: Outdoor Lighting > Lighting > For the home
+
+6110: Mirrors > Other furniture and accessories > For the home 
+6120: Watches, barometere, and similar equipment > Other furniture and accessories > For the home
+6130: CD storage > Other furniture and accessories > For the home 
+6190: Miscellaneous fittings > Other furniture and accessories > For the home
+6210: Stoves > Stoves and fireplaces > For the home 
+6220: Fireplaces > Stoves and fireplaces > For the home
+6230: Other stoves and accessories > Stoves and fireplaces > For the home 
+6300: Firewood > Stoves and fireplaces > For the home
+6410: Paintings > Art and antiques > For the home 
+6420: Posters, prints, and lithographs > Art and antiques > For the home
+6430: Other art > Art and antiques > For the home 
+6500: Antiques > Art and antiques > For the home
+6600: Plates and figurines > Other furniture and accessories > For the home 
+
+7000: Paving, garden tiles, etc. > Garden furniture, plants, tiles and accessories > Garden and construction
+7100: Garden furniture and equipment > Garden furniture, plants, tiles and accessories > Garden and construction 
+7210: tillers > Gardening machinery and tools > Garden and construction
+7220: Garden Tractors > Gardening machinery and tools > Garden and construction 
+7230: lawnmowers > Gardening machinery and tools > Garden and construction
+7240: Other garden machinery and tools > Gardening machinery and tools > Garden and construction 
+7310: greenhouses > Garden furniture, plants, tiles and accessories > Garden and construction
+7320: Grill and equipment > Garden furniture, plants, tiles and accessories > Garden and construction 
+7330: Playhouses and play equipment > Garden furniture, plants, tiles and accessories > Garden and construction
+7340: Other garden articles > Garden furniture, plants, tiles and accessories > Garden and construction 
+7400: plants > Garden furniture, plants, tiles and accessories > Garden and construction
+
+8000: Refrigerators and freezers > Appliances > For the home 
+8100: Stoves, ovens and hoods > Appliances > For the home
+8200: Dishwashers > Appliances > For the home 
+8300: Washing machines > Appliances > For the home
+8400: Clothes dryers, ironers, etc. > Appliances > For the home 
+8500: Vacuum cleaners, etc. > Other appliances > For the home
+8600: Kitchen equipment and machines > Other appliances > For the home 
+8700: Glassware, crockery and cutlery > Glassware, crockery and cutlery > For the home
+8800: Sewing machines and hobbies > Sewing machines and hobbies > Hobby 
+
+9000: Holiday rentals, domestic > Holiday rentals, domestic > Vacation
+9105: Belgium > Holiday rentals, abroad > Vacation 
+9110: Cyprus > Holiday rentals, abroad > Vacation
+9115: England > Holiday rentals, abroad > Vacation 
+9120: France > Holiday rentals, abroad > Vacation
+9125: Greece > Holiday rentals, abroad > Vacation 
+9130: Netherlands > Holiday rentals, abroad > Vacation
+9135: Ireland > Holiday rentals, abroad > Vacation 
+9140: Italy > Holiday rentals, abroad > Vacation
+9145: Malta > Holiday rentals, abroad > Vacation 
+9150: Norway > Holiday rentals, abroad > Vacation
+9155: Poland > Holiday rentals, abroad > Vacation 
+9160: Portugal > Holiday rentals, abroad > Vacation
+9165: Switzerland > Holiday rentals, abroad > Vacation 
+9170: other countries > Holiday rentals, abroad > Vacation
+9175: Spain > Holiday rentals, abroad > Vacation 
+9180: Sweden > Holiday rentals, abroad > Vacation
+9185: South Africa > Holiday rentals, abroad > Vacation 
+9190: Czech Republic > Holiday rentals, abroad > Vacation
+9195: Turkey > Holiday rentals, abroad > Vacation 
+9200: Property > bureau Holiday rentals, abroad > Vacation
+9205: Germany > Holiday rentals, abroad > Vacation 
+9210: Austria > Holiday rentals, abroad > Vacation
+9300: Timeshare > Holiday rentals, domestic > Vacation 
+9400: Hotels and inns > Holiday rentals, domestic > Vacation 
+9510: Private airplane tickets > Travel and attractions > Vacation 
+9520: Gift Cards > Travel and attractions > Vacation
+9530: Vacation packages > Travel and attractions > Vacation 
+9610: Sports > Tickets for sports, music, and culture > tickets
+9620: Concerts and festivals > Tickets for sports, music, and culture > tickets 
+9630: Cinema and theater etc. > Tickets for sports, music, and culture > tickets
+
+10010: Doors > Windows and doors > Garden and construction 
+10020: Porte > Windows and doors > Garden and construction
+10110: windows > Windows and doors > Garden and construction
+10120: Glass without frame > Building Materials > Garden and construction
+10200: Tiles > Building Materials > Garden and construction 
+10310: Floors > Building Materials > Garden and construction
+10320: Paint and paint products > Building Materials > Garden and construction 
+10340: Roof tiles, plates, etc. > Building Materials > Garden and construction
+10350: Wood, timber, etc. > Building Materials > Garden and construction 
+10390: Other building materials > Building Materials > Garden and construction
+10400: Kitchen units > Building Materials > Garden and construction 
+11010: Faucets > Bathroom and plumbing equipment > Garden and construction
+11020: Bath and shower accessories > Bathroom and plumbing equipment > Garden and construction 
+11030: Basins Bathroom and plumbing equipment Garden and construction
+11040: Toilets and bidets > Bathroom and plumbing equipment > Garden and construction 
+11090: Other bathroom accessories > Bathroom and plumbing equipment > Garden and construction
+11110: Kitchen faucets > Kitchen plumbing > Garden and construction 
+11120: Sinks > Kitchen plumbing > Garden and construction
+11130: Other kitchen plumbing > Kitchen plumbing > Garden and construction 
+11140: Drainage and sewerage > Other plumbing > Garden and construction
+11150: Cocks and valves > Other plumbing > Garden and construction 
+11160: Pipes and fittings > Other plumbing > Garden and construction
+11170: Gutters > Other plumbing > Garden and construction 
+11180: heat > Other plumbing > Garden and construction
+11190: Other plumbing accessories > Other plumbing > Garden and construction 
+11200: Fuels and Alternative Energy > Building Materials > Garden and construction
+11310: Switches and contacts > Electrical goods and electronics > Garden and construction 
+11320: Air conditioning and fans > Electrical goods and electronics > Garden and construction
+11330: Alarms and monitoring > Electrical goods and electronics > Garden and construction 
+11340: Cable and wire > Electrical goods and electronics > Garden and construction
+11390: Other electrical goods and electronics > Electrical goods and electronics > Garden and construction 
+11405: Power Tools > Tools, work tools, and machines > Garden and construction
+11410: Hand Tools > Tools, work tools, and machines > Garden and construction 
+11490: Work Tools and machines > Tools, work tools, and machines > Garden and construction
+
+11500: Construction machinery > Construction and equipment > Business 
+11520: Construction materials > Construction and equipment > Business
+11530: Industrial machinery > Construction and equipment > Business 
+11600: Product sales, iron and other metals > Construction and equipment > Business
+12000: Tractors > Agriculture equipment > Business 
+12100: Agricultural machinery > Agriculture equipment > Business
+12200: Spare parts for agricultural machinery > Agriculture equipment > Business 
+12300: Farming equipment > Agriculture equipment > Business
+
+15010: Poultry > Livestock > Animals 
+15020: Sheep and goats Livestock Animals
+15030: Cattle > Livestock > Animals 
+15040: Other livestock > Livestock > Animals
+15100: Horses > Horses > Animals 
+15120: Ponies > Horses > Animals
+15210: Clothing and boots > Riding equipment and accessories for horses > Animals 
+15220: Saddles > Riding equipment and accessories for horses > Animals
+15230: Other riding equipment > Riding equipment and accessories for horses > Animals 
+15300: Pensions, grazing, fodder etc. > Riding equipment and accessories for horses > Animals
+15410: Purebreed dogs > Dogs and accessories > Animals 
+15420: Dogs > Dogs and accessories > Animals
+15430: Breeding Service > Dogs and accessories > Animals 
+15440: Accessories for dogs > Dogs and accessories > Animals
+15510: Purebreed cats > Cats and accessories > Animals 
+15520: Domestic cats > Cats and accessories > Animals
+15530: Breeding Service > Cats and accessories > Animals 
+15540: Accessories for cats > Cats and accessories > Animals
+15610: Fish > Aquariums, terrariums, fish and reptiles > Animals 
+15620: Reptiles > Aquariums, terrariums, fish and reptiles > Animals
+15630: Aquariums and terrariums > Aquariums, terrariums, fish and reptiles > Animals 
+15710: Birds > Domestic pets > Animals
+15720: Bird cages and equipment > Domestic pets > Animals 
+15810: Rodents > Domestic pets > Animals
+15820: Other domestic pets > Domestic pets > Animals
+15900: Accessories for domestic pets > Domestic pets > Animals 
+
+20000: Radiocommunications > Other communications equipment > Mobiles and telephony 
+20100: Binoculars, etc. > Video cameras, film equipment, and binoculars > Image and sound
+20210: Canon > Analog cameras > Image and sound 
+20220: Minolta > Analog cameras > Image and sound
+20230: Nikon > Analog cameras > Image and sound 
+20240: Olympus > Analog cameras  > Image and sound
+20250: Pentax > Analog cameras > Image and sound 
+20290: Other analog cameras > Analog cameras > Image and sound
+20310: Canon > Digital cameras > Image and sound 
+20320: HP > Digital cameras > Image and sound
+20330: Minolta > Digital cameras > Image and sound 
+20340: Nikon > Digital cameras > Image and sound
+20350: Olympus > Digital cameras > Image and sound 
+20360: Sony > Digital cameras > Image and sound
+20390: Other digital cameras > Digital cameras > Image and sound 
+20410: Darkroom equipment > Photo equipment > Image and sound
+20420: Flash > Photo equipment > Image and sound 
+20430: Lenses > Photo equipment > Image and sound
+20440: Memory cards > Photo equipment > Image and sound 
+20490: Other photo equipment and accessories > Photo equipment > Image and sound
+20500: Home movie equipment > Video cameras, film equipment, and binoculars > Image and sound 
+20600: Camcorders and equipment > Video cameras, film equipment, and binoculars > Image and sound
+21016: TV > Televisions and accessories > Image and sound 
+21030: Accessories for TV > Televisions and accessories > Image and sound
+21040: Projectors and accessories > DVD players, VCRs, projectors, and accessories > Image and sound 
+21110: Analog receivers Satellite dishes, antennas, and accessories > Image and sound
+21120: Digital receivers > Satellite dishes, antennas, and accessories > Image and sound 
+21130: Satellite dishes > Satellite dishes, antennas, and accessories > Image and sound
+21190: Other equipment > Satellite dishes, antennas, and accessories > Image and sound 
+21200: VCRs > DVD players, VCRs, projectors, and accessories > Image and sound
+21300: Videos > movie > Image and sound 
+21400: DVD players, etc. > DVD players, VCRs, projectors, and accessories > Image and sound
+21410: DVD and hard disk recorders > DVD players, VCRs, projectors, and accessories > Image and sound 
+21500: DVD and Blu-ray movies > Movies > Image and sound
+21610: CDs > CD, LP and tape > Image and sound 
+21620: Lp > CD, LP and tape > Image and sound
+21700: Stereo system > Hi-fi and accessories > Image and sound 
+21800: Tape recorders > Hi-fi and accessories > Image and sound
+21900: Turntables > Hi-fi and accessories > Image and sound 
+22010: CD players > Hi-fi and accessories > Image and sound
+22020: MiniDisc players > Hi-fi and accessories > Image and sound 
+22030: Mp3 / Mp4 players > Hi-fi and accessories > Image and sound
+22035: Accessories for MP3 players > Hi-fi and accessories > Image and sound 
+22100: Radios > Hi-fi and accessories > Image and sound
+22200: Amplifiers, hi-fi > Hi-fi and accessories > Image and sound 
+22300: Speakers, hi-fi > Hi-fi and accessories > Image and sound
+22310: Headphones > Hi-fi and accessories > Image and sound 
+22410: Surround speakers and subwoofers > Hi-fi surround and accessories > Image and sound
+22420: Surround Amplifiers > Hi-fi surround and accessories > Image and sound 
+22430: Surround Systems > Hi-fi surround and accessories > Image and sound
+
+23000: Piano > Musical Instruments > Musical Instruments 
+23100: Keyboards, organs, and synthesizers > Musical Instruments > Musical Instruments
+23200: Accordions > Musical Instruments > Musical Instruments 
+23310: Acoustic guitars > Musical Instruments  > Musical Instruments
+23320: Electricity and semi-acoustic guitars > Musical Instruments > Musical Instruments 
+23400: Bass guitars > Musical Instruments > Musical Instruments
+23500: Other string instruments > Musical Instruments > Musical Instruments 
+23610: Guitar amplifiers > Amplifiers, pedals, etc. > Musical Instruments
+23620: Bass amplifiers > Amplifiers, pedals, etc. > Musical Instruments 
+23700: Guitar Effects and pedals > Amplifiers, pedals, etc. > Musical Instruments
+23800: Percussion > Musical Instruments > Musical Instruments 
+23900: Wind instruments > Musical Instruments > Musical Instruments
+24000: Other music devices > Amplifiers, pedals, etc. > Musical Instruments 
+24100: Discotheque equipment > Musical Instruments > Musical Instruments
+24210: Musician looking for band > Music contacts and education > Musical Instruments 
+24220: Band looking musician > Music contacts and education > Musical Instruments
+24230: Music lessons > Music contacts and education > Musical Instruments 
+24240: Other music contacts > Music contacts and education > Musical Instruments
+24300: Sheet music > Music contacts and education > Musical Instruments 
+
+25030: Stationary PC > Desktop computers > Computers and consoles 
+25090: Mac > Mac > Computers and consoles 
+25185: laptops > Laptop computers > Computers and consoles
+25190: PDA and accessories > PDA and accessories > Computers and consoles 
+25210: Drives > Hardware and software > Computers and consoles
+25220: Graphics cards > Hardware and software > Computers and consoles 
+25230: Hard drives > Hardware and software > Computers and consoles
+25235: Network and routers > Hardware and software > Computers and consoles
+25240: Printers > Hardware and software > Computers and consoles
+25245: Processors and motherboards > Hardware and software > Computers and consoles
+25250: Ram blocks > Hardware and software > Computers and consoles
+25255: Scanners > Hardware and software > Computers and consoles 
+25260: Monitors > Hardware and software > Computers and consoles
+25265: Keyboards and mice > Hardware and software > Computers and consoles
+25290: Other hardware Hardware and software Computers and consoles
+25300: Software and manuals > Hardware and software > Computers and consoles 
+25400: Games for PC and Mac Games and accessories Computers and consoles
+25510: Nintendo > Consoles and accessories > Computers and consoles 
+25530: Playstation Consoles and accessories Computers and consoles
+25560: Xbox > Consoles and accessories > Computers and consoles 
+25590: Other consoles > Consoles and accessories > Computers and consoles
+25595: Accessories for consoles > Consoles and accessories > Computers and consoles 
+25610: Games for Nintendo >  Games and accessories > Computers and consoles
+25630: Games for Playstation > Games and accessories > Computers and consoles 
+25640 Games for Xbox Games and accessories Computers and consoles
+25690: Games for other consoles > Games and accessories > Computers and consoles 
+27010: Corded phones > Phones and accessories > Mobiles and telephony
+27020: Cordless phones > Phones and accessories > Mobiles and telephony 
+27030: Accesories for phones >  Phones and accessories > Mobiles and telephony
+27190: Accessories for mobile phones > Phones and accessories > Mobiles and telephony 
+27185: mobile phones > Mobile phones and accessories > Mobiles and telephony
+28010: Office supplies > Office > Business 
+28020: Office machines > Office > Business
+28100: Office furniture > Inventory > Business 
+28200: Store > furniture Inventory > Business
+28300: Industrial Equipment > Inventory > Business
+28400: Canteen, cafÃ© and, restaurant > Inventory > Business
+28500: Workwear > Inventory > Business 
+28600: Consignments, etc. > Inventory > Business
+28700: Business contact > Inventory > Business
+
+29000: Vacancies > Work and education > Careers
+29100: Job wanted > Work and education > Careers 
+29200: Office help > Work and education > Careers
+29300: Crafts help > Work and education > Careers 
+29400: House maid, cleaning and child care > Work and education > Careers
+29500: Transport, moving, crates > Work and education > Careers 
+29604: Architecture and design >  Study books > Books and magazines
+29608: Biology > Study books > Books and magazines 
+29612: Computer and Internet > Study books > Books and magazines
+29616: Physics > Study books > Books and magazines 
+29620: History > Study books > Books and magazines
+29624: Humanities > Study books > Books and magazines 
+29628: Sports and recreation > Study books > Books and magazines
+29632: Jura > Study books > Books and magazines 
+29636: Chemistry > Study books >  Books and magazines
+29640: Literature > Study books > Books and magazines 
+29644: Calculators > Study books > Books and magazines
+29648: Marketing > Study books > Books and magazines 
+29652: Mathematics and statistics >  Study books >  Books and magazines
+29656: Medicine and health > Study books > Books and magazines
+29660:Psychology, pedagogy, and learning Study books Books and magazines
+29664: Religion and theology > Study books > Books and magazines 
+29668: Social studies >  Study books > Books and magazines
+29672: Languages and dictionaries > Study books > Books and magazines 
+29676: Technique > Study books > Books and magazines
+29680: Economy and trade > Study books > Books and magazines 
+29684: Miscellaneous > Study books >  Books and magazines
+29688: Education > Work and education > Careers 
+
+30010: Prams > Child and baby equipment >  For children
+30020: Strollers > Child and baby equipment > For children 
+30030: Child car and bicycle seats >  Child and baby equipment >  For children
+30040: Other equipment for children and babies > Child and baby equipment > For children
+30110: Action figures and Accessories >  Toys & Games >  For children
+30115: Baby toys > Toys & Games > For children 
+30120: Teddy bears > Toys & Games > For children
+30130: Brio > Toys & Games > For children 
+30135: Dolls and accessories > Toys & Games > For children
+30137: Fisher-Price > Toys & Games > For children
+30139: Toy cars and accessories > Toys & Games > For children
+30140: Lego > Toys & Games > For children
+30145: Game > Toys & Games > For children
+30190: Other toys > Toys & Games > For children 
+30210: Cribs, cots, and similar > Child and baby furniture > For children
+30220: Children's beds > Child and baby furniture > For children 
+30230: Chairs and tables > Child and baby furniture > For children
+30290: Other children's and baby furniture > Child and baby furniture > For children 
+30410: Girls 0-1 years, size 50-86 > Children's wear >  For children 
+30411: Girls 2-3 years, size 92-98 > Children's wear > For children 
+30412: Girls 4-6 years, size 104-116 > Children's wear > For children
+30413: Girls 7-10 years, size 122-140 > Children's wear > For children 
+30414: Girls 11-14 years, size 146-164 > Children's wear >  For children
+30415: Confirmation clothes > Children's wear > For children 
+30420: Boys 0-1 years, size 50-86 > Children's wear >  For children
+30421: Boys 2-3 years, size 92-98 > Children's wear > For children 
+30422: Boys 4-6 years, size 104-116 >  Children's wear > For children
+30423: Boys 7-10 years, size 122-140 > Children's wear > For children 
+30424: Boys 11-14 years, size 146-164 >  Children's wear > For children
+30440: Children's shoes and boots > Children's wear > For children 
+
+30510: Pants > Clothing for men > Clothing and fashion
+30520: Shirts, sweaters, and t-shirts > Clothing for men > Clothing and fashion 
+30530: Suits Clothing for men Clothing and fashion
+30540: Jackets and coats > Clothing for men > Clothing and fashion 
+30550: Shoes and boots > Clothing for men >  Clothing and fashion
+30560: Other men's clothing and accessories > Clothing for men > Clothing and fashion 
+30610: Blouses, tops, and sweaters > Clothes for women >  Clothing and fashion
+30620: Pants > Clothes for women > Clothing and fashion 
+30630: Skirts >  Clothes for women > Clothing and fashion
+30640: Dresses > Clothes for women > Clothing and fashion 
+30650: Jackets and coats >  Clothes for women > Clothing and fashion
+30660: Shoes and boots > Clothes for women > Clothing and fashion 
+30670: Other women's clothing and accessories > Clothes for women > Clothing and fashion
+30680: Maternity wear > Clothes for women > Clothing and fashion 
+30690: Bridal wear > Clothes for women > Clothing and fashion
+30700: Jewelry & watches > Accessorie > Clothing and fashion 
+30800: Jewelry > Accessories > Clothing and fashion 
+30900: Sunglasses > Accessories > Clothing and fashion 
+31010: Handbags > Bags and accessories > Clothing and fashion
+31020: Suitcases, travel bags, and backpacks > Bags and accessories > Clothing and fashion 
+31030: Other bags and accessories >  Bags and accessories >  Clothing and fashion
+32000: Alternative treatment > Personal care > Clothing and fashion 
+32100: Health and nursing > Personal care > Clothing and fashion
+32200: Tanning > Personal care > Clothing and fashion 
+32300: Beauty and wellness > Personal care > Clothing and fashion
+
+34110: Hunting > Hunting and fishing > Sports and recreation
+34120 Fishing > Hunting and fishing > Sports and recreation
+34200: Racquet sports > Sport and exercise > Sports and recreation 
+34300: Winter sports > Sport and exercise > Sports and recreation
+34400: Exercise and weight training > Sport and exercise > Sports and recreation 
+34500: Roller skates, scooters, and skateboards Sport and exercise Sports and recreation
+34610: Sets > Golf and equipment > Sports and recreation 
+34620: Drivers and clubs > Golf and equipment > Sports and recreation
+34630: Iron > Golf and equipment > Sports and recreation 
+34640: Wedges > Golf and equipment > Sports and recreation
+34650: Putters > Golf and equipment > Sports and recreation 
+34660: Carts and bags > Golf and equipment > Sports and recreation
+34670: Other golf equipment > Golf and equipment > Sports and recreation 
+34700: Flying > Sport and exercise > Sports and recreation
+34800: Other sports > Sport and exercise > Sports and recreation 
+34900: Sportswear > Sport and exercise > Sports and recreation
+35000: Surf and equipment > Water sports > Sports and recreation 
+35100: Diving Water sports Sports and recreation
+35200: Other water sports > Water sports > Sports and recreation 
+36020: Non-fiction literature > General Stock > Books and magazines
+36030: Fiction literature > General Stock > Books and magazines 
+36040: Biographies > General Stock > Books and magazines
+36050: Children's books > General Stock > Books and magazines 
+36060: Other books and magazines > General Stock > Books and magazines
+36100: Model hobby > Model hobby > Hobby 
+36200: Stamps > Collections > Hobby
+36300: Coins and banknotes > Collections > Hobby 
+36400: Various collections and objects > Collections > Hobby
+37000: Motorboats > Boats > Boats 
+37100: Motor sailers > Boats > Boats
+37200: Sailboats > Boats > Boats 
+37300: Dinghies > Boats > Boats
+37400: Dinghies and inflatables > Boats > Boats 
+37500: Rowing, canoeing, and kayaking > Boats > Boats
+37600: Rigging > Boats > Boats 
+37700: Inboard engines and gearboxes > Boats > Boats
+37800: Outboard engines > Boats > Boats 
+37900: Spare parts for boat engines > Boats > Boats
+38010: Equipment for canoeing, kayaking, etc. > Equipment > Boats 
+38100: Lifesaving > Boats > Boats
+38310: Maps and navigation > Equipment > Boats 
+38320: Boat accessories > Equipment > Boats
+38500: Berths > Equipment > Boats 
+38600: Boat rentals > Equipment > Boats
+
+40000: Alfa Romeo > Cars > Cars
+40100: Audi > Cars > Cars
+40200: BMW > Cars > Cars 
+40300: Chrysler > Cars > Cars
+40400: Citroen > Cars > Cars 
+40510: Daewoo > Cars > Cars
+40520: Chevrolet > Cars > Cars 
+40600: Daihatsu > Cars ? Cars
+40700: Fiat > Cars > Cars 
+40800: Ford > Cars > Cars
+40900: Honda > Cars > Cars 
+41000: Hyundai > Cars > Cars
+41100: Jaguar > Cars > Cars 
+41200: Kia > Cars > Cars
+41210: Lancia > Cars > Cars 
+41215: Land Rover > Cars > Cars
+41220: Lexus > Cars > Cars 
+41300: Mazda > Cars > Cars
+41400: Mercedes > Cars > Cars 
+41500: Mitsubishi > Cars > Cars
+41600: Nissan > Cars > Cars 
+41700: Opel > Cars > Cars
+41800: Peugeot > Cars > Cars 
+41900: Porsche > Cars > Cars
+42000: Renault > Cars > Cars 
+42100: Rover > Cars > Cars
+42200: Saab > Cars > Cars 
+42300: Seat > Cars > Cars
+42400: Skoda > Cars > Cars 
+42500: Subaru > Cars > Cars
+42600: Suzuki > Cars > Cars 
+42700: Toyota > Cars > Cars
+42800: Volvo > Cars > Cars 
+42900: VW > Cars > Cars
+43000: All cars > Cars > Cars 
+47000: Special cars > Other cars > Car accessories
+47100: Veteran cars > Other cars > Car accessories
+47110: Spare parts for Veterans > Accessories and spare parts > Car accessories
+47400: American cars > Other cars > Car accessories 
+47601: BMW > Cars with yellow licens plate > Cars
+47602: Chevrolet > Cars with yellow licens plate > Cars 
+47603: Chrysler > Cars with yellow licens plate > Cars
+47604: Citroen > Cars with yellow licens plate > Cars 
+47605: Fiat > Cars with yellow licens plate > Cars
+47606: Ford > Cars with yellow licens plate > Cars
+47607: Honda > Cars with yellow licens plate > Cars
+47608: Hyundai > Cars with yellow licens plate > Cars 
+47609: Iveco > Cars with yellow licens plate > Cars
+47610: Jeep > Cars with yellow licens plate > Cars 
+47611: Kia > Cars with yellow licens plate > Cars
+47624: Land Rover > Cars with yellow licens plate > Cars 
+47628: Mazda > Cars with yellow licens plate > Cars
+47632: Mercedes > Cars with yellow licens plate > Cars 
+47636: Mitsubishi > Cars with yellow licens plate > Cars
+47640: Nissan > Cars with yellow licens plate > Cars 
+47644: Opel > Cars with yellow licens plate > Cars
+47648: Peugeot > Cars with yellow licens plate > Cars 
+47652: Renault > Cars with yellow licens plate > Cars
+47656: Rover > Cars with yellow licens plate > Cars 
+47660: Seat > Cars with yellow licens plate > Cars
+47664: Suzuki > Cars with yellow licens plate > Cars 
+47668: Toyota > Cars with yellow licens plate > Cars
+47672: Volvo > Cars with yellow licens plate > Cars 
+47676: VW > Cars with yellow licens plate Cars
+47680: Other vans > Cars with yellow licens plate > Cars 
+47690: Trucks > Trucks and Buses > Cars
+47700: Buses > Trucks and Buses > Cars 
+47900: Motorsport > Other cars > Car accessories
+50000: Cars sold for spare parts > Accessories and spare parts > Car accessories 
+50100: Spare parts for American cars > Accessories and spare parts > Car accessories
+50200: Spare parts for 4x4 > Accessories and spare parts > Car accessories 
+50300: Spare parts for cars with yellow licens plate and trucks > Accessories and spare parts > Car accessories
+50400: Engines and gearboxes for passenger cars > Accessories and spare parts > Car accessories 
+50500: Spare parts for cars > Accessories and spare parts Car accessories
+50610: Tires without rims > Accessories and spare parts > Car accessories 
+50620: Rims without tires > Accessories and spare parts > Car accessories
+50630: Rims with tires and accessories > Accessories and spare parts > Car accessories 
+50710: Tuning > Accessories and spare parts > Car accessories
+50720: Styling > Accessories and spare parts > Car accessories 
+50790: Other car accessories > Accessories and spare parts > Car accessories
+50800: Car Stereo > Accessories and spare parts > Car accessories 
+50810: Navigation and multimedia > Accessories and spare parts > Car accessories
+50900: Trailers > Miscellaneous > Car accessories 
+51000: Workshops, vehicle inspection, etc. > Miscellaneous > Car accessories
+51100: Workshop and tools > Miscellaneous > Car accessories 
+51200: Workshop manuals > Miscellaneous > Car accessories
+51300: Auto rental > Miscellaneous > Car accessories 
+51400: Driving Schools > Miscellaneous > Car accessories
+
+52000: Campers > Camper vans and trailer tents > Camping
+52110: Adria > Caravans > Camping
+52115: BÃ¼rstner > Caravans > Camping 
+52116: Cabby > Caravans > Camping
+52120: Dethleffs > Caravans > Camping 
+52121: Eifelland > Caravans > Camping
+52125: Fendt > Caravans > Camping 
+52130: Hobby > Caravans > Camping
+52131: Hymer > Caravans > Camping 
+52132: Kabe > Caravans > Camping
+52135: Knaus > Caravans > Camping 
+52140: LMC > Caravans > Camping
+52150: Sprite > Caravans > Camping 
+52155: Tabbert > Caravans > Camping
+52156: T.E.C. > Caravans > Camping 
+52160: Wilk > Caravans > Camping
+52190: other caravans > Caravans > Camping 
+52195: Awnings and equipment to the cart > Camping supplies, etc. > Camping
+52200: Trailer tents > Camper vans and trailer tents > Camping 
+52300: Camping equipment > Camping supplies, etc. > Camping
+52500: Campsites > Camping supplies, etc. > Camping 
+
+55010: Aprilia > Motorcycles > Motorcycles and accessories
+55011: BMW > Motorcycles > Motorcycles and accessories 
+55012: BSA > Motorcycles > Motorcycles and accessories
+55013: Ducati > Motorcycles > Motorcycles and accessories 
+55014: Harley-Davidson > Motorcycles > Motorcycles and accessories
+55015: Honda > Motorcycles > Motorcycles and accessories 
+55016: Kawasaki > Motorcycles > Motorcycles and accessories
+55017: MZ > Motorcycles > Motorcycles and accessories 
+55018: Moto Guzzi > Motorcycles > Motorcycles and accessories
+55019: Nimbus > Motorcycles > Motorcycles and accessories 
+55020: Suzuki > Motorcycles > Motorcycles and accessories
+55021: Triumph > Motorcycles > Motorcycles and accessories 
+55022: Yamaha > Motorcycles > Motorcycles and accessories
+55023: Other motorcycles > Motorcycles > Motorcycles and accessories 
+55105: Road racing > Other motorcycles > Motorcycles and accessories
+55110: Motocross > Other motorcycles > Motorcycles and accessories 
+55120: Pocket bikes > Other motorcycles > Motorcycles and accessories
+55130: Other MC sports > Other motorcycles > Motorcycles and accessories 
+55200: ATVs > Other motorcycles > Motorcycles and accessories
+55310: Spare parts for motorcycles > Spare parts, equipment, and accessories > Motorcycles and accessories 
+55320: Motorcycles sold for spare parts > Spare parts, equipment, and accessories > Motorcycles and accessories
+55410: MC-wear and helmets > Spare parts, equipment, and accessories > Motorcycles and accessories 
+55420: MC-equipment and accessories > Spare parts, equipment, and accessories > Motorcycles and accessories
+56010: Aprilia > 45 scooter, moped, and accessories > Scooters and mopeds 
+56014: Honda > 45 scooter, moped, and accessories > Scooters and mopeds
+56018: Kymco > 45 scooter, moped, and accessories > Scooters and mopeds 
+56020: Peugeot > 45 scooter, moped, and accessories > Scooters and mopeds
+56030: PGO > 45 scooter, moped, and accessories > Scooters and mopeds 
+56040: Piaggio > 45 scooter, moped, and accessories > Scooters and mopeds
+56050: Suzuki > 45 scooter, moped, and accessories > Scooters and mopeds 
+56055: SYM > 45 scooter, moped, and accessories > Scooters and mopeds
+56060: Yamaha > 45 scooter, moped, and accessories > Scooters and mopeds 
+56070: Other scooters and mopeds > 45 scooter, moped, and accessories > Scooters and mopeds
+56100: Spare parts for 45 scooters and mopeds > 45 scooter, moped, and accessories > Scooters and mopeds 
+57010: Aprilia > 30 scooter, moped, and accessories > Scooters and mopeds
+57020: Gilera > 30 scooter, moped, and accessories > Scooters and mopeds 
+57030: Honda > 30 scooter, moped, and accessories > Scooters and mopeds
+57033: Kymco > 30 scooter, moped, and accessories > Scooters and mopeds 
+57035: Peugeot > 30 scooter, moped, and accessories > Scooters and mopeds
+57040: PGO > 30 scooter, moped, and accessories > Scooters and mopeds 
+57050: Piaggio > 30 scooter, moped, and accessories > Scooters and mopeds
+57060: Puch > 30 scooter, moped, and accessories > Scooters and mopeds 
+57070: Suzuki > 30 scooter, moped, and accessories > Scooters and mopeds
+57075: SYM > 30 scooter, moped, and accessories > Scooters and mopeds 
+57080: Yamaha > 30 scooter, moped, and accessories > Scooters and mopeds
+57090: Other scooters and mopeds > 30 scooter, moped, and accessories > Scooters and mopeds 
+57100: Spare parts for 30 scooters and mopeds > 30 scooter, moped, and accessories > Scooters and mopeds
+58010: Children's bicycle > Bicycles and bicycle trailers > Bicycles 
+58020: Women's bicycle > Bicycles and bicycle trailers > Bicycles
+58030: Men's bicycle > Bicycles and bicycle trailers > Bicycles 
+58040: Mountainbike > Bicycles and bicycle trailers > Bicycles
+58050: Racingbike > Bicycles and bicycle trailers > Bicycles 
+58060: Other bicycles Bicycles and bicycle trailers Bicycles
+58070: Bicycle trailers > Bicycles and bicycle trailers > Bicycles
+58100: Cykeldele og TilbehÃ¸r > Bicycle Parts and Accessories > Bicycles
+
+60000: Foodstuff > Miscellaneous > Miscellaneous 
+60100: Party and entertainment Miscellaneous Miscellaneous
+60200: Financial services > Miscellaneous > Miscellaneous 
+60300: Communal driving > Miscellaneous > Miscellaneous
+60400: Flea market > Miscellaneous > Miscellaneous 
+60500: Various > Miscellaneous > Miscellaneous
+60600: Free items > Miscellaneous > Miscellaneous 
+60700: Wanted and found items > Miscellaneous > Miscellaneous
+60800: Announcements > Miscellaneous > Miscellaneous 
+60900: Christmas and New Year > Miscellaneous > Miscellaneous
+65000: Personal contacts > Personal contacts > Contact and dating 
+25700: iPads
+25710: Other tablets
+25720: Tablet accessories

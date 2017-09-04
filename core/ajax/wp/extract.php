@@ -12,7 +12,8 @@
 	ob_start(null, 0, PHP_OUTPUT_HANDLER_CLEANABLE);
 
 	require_once dirname(__FILE__) . '/../../../../../../wp-load.php';
-	global $wpdb;
+	global $wpdb,$woocommerce;
+    $wc_version = explode('.', $woocommerce->version);
 
 	$token = safeGetPostData('token');
 	$request = safeGetPostData('request');
@@ -127,7 +128,11 @@
 			if (isset($this_result->item_group_id))
 				break;
 			//WooCommerce-Product
-			$product = get_product($this_result->ID);
+            if (($wc_version[0] <= 2)){
+                $product = get_product($prod->ID); //WooCommerce - get product by id
+            } else {
+                $product = new WC_Product($prod->ID);
+            }
 			//Links
 			$this_result->link = get_permalink($this_result->ID);
 			//Image Links

@@ -1,5 +1,5 @@
 <?php
-
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
 /********************************************************************
  * Version 2.1
  * A Google Feed
@@ -12,10 +12,12 @@
 
 require_once dirname(__FILE__) . '/../basicfeed.php';
 
-class PFacebookXMLFeed extends PXMLFeed {
-    function __construct() {
+class PFacebookXMLFeed extends PXMLFeed
+{
+    function __construct()
+    {
         parent::__construct();
-        $this->providerName  = 'FacebookXML';
+        $this->providerName = 'FacebookXML';
         $this->providerNameL = 'facebookxml';
         //Create some attributes (Mapping 3.0) in the form (title, Google-title, CData, isRequired)
         //Note that isRequired is just to direct the plugin on where on the dialog to display
@@ -29,7 +31,7 @@ class PFacebookXMLFeed extends PXMLFeed {
         $this->addAttributeMapping('title', 'g:title', true, true);
         $this->addAttributeMapping('regular_price', 'g:price', false, true);
         $this->addAttributeMapping('sku', 'g:mpn', false, true);
-		$this->addAttributeMapping('brand', 'g:brand', true, true);
+        $this->addAttributeMapping('brand', 'g:brand', true, true);
 
         //Optional Attributes
         $this->addAttributeMapping('upc', 'g:gtin', true, false);
@@ -41,12 +43,12 @@ class PFacebookXMLFeed extends PXMLFeed {
         $this->addAttributeMapping('current_category', 'g:google_product_category', true, false);
         $this->addAttributeMapping('', 'g:material', true, false);
         $this->addAttributeMapping('', 'g:pattern', true, false);
-        $this->addAttributeMapping('', 'g:product_type', true, false);        
+        $this->addAttributeMapping('', 'g:product_type', true, false);
         $this->addAttributeMapping('sale_price', 'g:sale_price', false, false);
         $this->addAttributeMapping('sale_price_effective_date', 'g:sale_price_effective_date', false, false);
-       
+
         //Optional Shipping attributes
-       // $this->addAttributeMapping('', 'g:shipping', true, false);
+        // $this->addAttributeMapping('', 'g:shipping', true, false);
         $this->addAttributeMapping('weight', 'g:shipping_weight', true, false);
         $this->addAttributeMapping('shipping_size', 'g:shipping_size', true, false);
 
@@ -66,8 +68,8 @@ class PFacebookXMLFeed extends PXMLFeed {
 //		$this->addAttributeMapping('', 'g:custom_label_3', false, false);
 //		$this->addAttributeMapping('', 'g:custom_label_4', false, false);
 
-		$this->google_exact_title = false;
-		$this->google_combo_title = false;
+        $this->google_exact_title = false;
+        $this->google_combo_title = false;
         $this->addRule('google_exact_title', 'googleexacttitle');
         $this->addRule('google_combo_title', 'googlecombotitle');
 
@@ -76,14 +78,15 @@ class PFacebookXMLFeed extends PXMLFeed {
         $this->addAttributeDefault('additional_images', 'none', 'PGoogleAdditionalImages');
 //		$this->addAttributeDefault('tax_country', 'US');
 
-		$this->addRule('price_standard', 'pricestandard');
-		$this->addRule('status_standard', 'statusstandard');
-        $this->addRule('price_rounding','pricerounding'); //2 decimals
-		$this->addRule('weight_unit', 'weightunit');	
+        $this->addRule('price_standard', 'pricestandard');
+        $this->addRule('status_standard', 'statusstandard');
+        $this->addRule('price_rounding', 'pricerounding'); //2 decimals
+        $this->addRule('weight_unit', 'weightunit');
 
     }
 
-    function formatProduct($product) {
+    function formatProduct($product)
+    {
         global $pfcore;
         //********************************************************************
         //Prepare the Product Attributes
@@ -92,48 +95,48 @@ class PFacebookXMLFeed extends PXMLFeed {
         //Format is "LxWxH units"
         $product->attributes['shipping_size'] = null;
         //length
-        if ( isset($product->attributes['length']) )
+        if (isset($product->attributes['length']))
             $product->attributes['shipping_size'] = $product->attributes['length'];
-        else 
+        else
             $product->attributes['shipping_size'] = 0;
         //width
-        if ( isset($product->attributes['width']) )
+        if (isset($product->attributes['width']))
             $product->attributes['shipping_size'] .= 'x' . $product->attributes['width'];
         else
             $product->attributes['shipping_size'] .= 'x' . 0;
         //height
-        if ( isset($product->attributes['height']) )
+        if (isset($product->attributes['height']))
             $product->attributes['shipping_size'] .= 'x' . $product->attributes['height'];
         else
-            $product->attributes['shipping_size'] .= 'x'. 0;
+            $product->attributes['shipping_size'] .= 'x' . 0;
         //format units if shipping_size 'exists'
-        if ( $product->attributes['shipping_size'] == '0x0x0')
-             $product->attributes['shipping_size'] = null;
-        else 
+        if ($product->attributes['shipping_size'] == '0x0x0')
+            $product->attributes['shipping_size'] = null;
+        else
             $product->attributes['shipping_size'] .= ' ' . $this->dimension_unit;
 //PLA
 //$product->attributes['link'] .= '?source=googleproduct&cvars='. rawurlencode($product->attributes['title']);
-       if (isset($product->attributes['sale_price_dates_from']) && isset($product->attributes['sale_price_dates_to'])) 
-        {   
-            $product->attributes['sale_price_dates_from'] = $pfcore->localizedDate( 'Y-m-d\TH:i:sO', $product->attributes['sale_price_dates_from'] );
-            $product->attributes['sale_price_dates_to'] = $pfcore->localizedDate( 'Y-m-d\TH:i:sO', $product->attributes['sale_price_dates_to'] );
+        if (isset($product->attributes['sale_price_dates_from']) && isset($product->attributes['sale_price_dates_to'])) {
+            $product->attributes['sale_price_dates_from'] = $pfcore->localizedDate('Y-m-d\TH:i:sO', $product->attributes['sale_price_dates_from']);
+            $product->attributes['sale_price_dates_to'] = $pfcore->localizedDate('Y-m-d\TH:i:sO', $product->attributes['sale_price_dates_to']);
 
-            if ( strlen($product->attributes['sale_price_dates_from']) > 0 && strlen($product->attributes['sale_price_dates_to']) > 0 )
-                $product->attributes['sale_price_effective_date'] = $product->attributes['sale_price_dates_from'].'/'.$product->attributes['sale_price_dates_to'];
+            if (strlen($product->attributes['sale_price_dates_from']) > 0 && strlen($product->attributes['sale_price_dates_to']) > 0)
+                $product->attributes['sale_price_effective_date'] = $product->attributes['sale_price_dates_from'] . '/' . $product->attributes['sale_price_dates_to'];
         }
 
         //********************************************************************
         //Validation checks & Error messages
         //********************************************************************
-		// if (!isset($product->attributes['brand']) || (strlen($product->attributes['brand']) == 0))
-		// 	if (($this->getMappingByMapto('g:identifier_exists') == null) && ($this->getMappingByMapto('`in') == null) && ($this->getMappingByMapto('g:brand') == null))
-		// 		$this->addErrorMessage(2000, 'Missing brand for ' . $product->attributes['title']);
+        // if (!isset($product->attributes['brand']) || (strlen($product->attributes['brand']) == 0))
+        // 	if (($this->getMappingByMapto('g:identifier_exists') == null) && ($this->getMappingByMapto('`in') == null) && ($this->getMappingByMapto('g:brand') == null))
+        // 		$this->addErrorMessage(2000, 'Missing brand for ' . $product->attributes['title']);
 
         return parent::formatProduct($product);
 
     }
 
-    function getFeedFooter($file_name, $file_path) {
+    function getFeedFooter($file_name, $file_path)
+    {
         $output = '
   </channel>
 </rss>';
@@ -141,7 +144,8 @@ class PFacebookXMLFeed extends PXMLFeed {
         return $output;
     }
 
-    function getFeedHeader($file_name, $file_path) {
+    function getFeedHeader($file_name, $file_path)
+    {
         $output = '<?xml version="1.0" encoding="UTF-8" ?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
